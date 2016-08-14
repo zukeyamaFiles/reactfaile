@@ -1,0 +1,6 @@
+{
+"default": { "title":"ページタイトル", "description":"ディスクリプション", "keywords":"キーワード"},
+"aaa/index": { "title":"AAA｜サイト名", "description":"AAAディスクリプション", "keywords":"AAA,AAA,AAA"},
+"bbb/index": { "title":"BBB｜サイト名", "description":"BBBディスクリプション", "keywords":"BBB,BBB"},
+"catTop": { "title":"カテゴリートップ", "description":"BBBディスクリプション", "keywords":"BBB,BBB"}
+}

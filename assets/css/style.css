@@ -1,0 +1,27 @@
+@import "./parts/_layout.css";
+$f: 89;
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex: 1 1 auto;
+    transform: rotate(120deg);
+    &_title {
+        width: 500px;
+        @media (max-width: 500px) {
+            width: auto;
+        }
+        body.is_dark & {
+            color: white;
+        }
+    }
+    img {
+        display: block;
+    }
+    &:first-child {
+        font-size: $f;
+
+    }
+}

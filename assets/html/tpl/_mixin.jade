@@ -1,0 +1,54 @@
+mixin list
+	- for (var i = 1; i < arguments.length; i++) {
+		if arguments[0] === arguments[i]
+			li
+				a.is-active= arguments[i]
+		else
+			li
+				a= arguments[i]
+	-}
+
+mixin header(type)
+	if type === "top"
+		header.top
+			p デフォルト
+	else if type === "cnt"
+		header._2
+			p デフォルト		
+	else
+		header._3
+			p デフォルト
+
+
+mixin footer(type)
+	if type === "top"
+		header.top
+			p デフォルト
+	else if type === "cnt"
+		header._2
+			p デフォルト		
+	else
+		header._3
+			p デフォルト
+
+mixin side(type)
+	if type === "top"
+
+	else if type === "cnt"
+		header._2
+			p デフォルト		
+	else
+		header._3
+			p デフォルト
+
+
+
+mixin title(json,title)
+	-
+		var y = title;
+		var t = (function() {
+			var name = json[title].title;
+			return name;
+		})();
+
+	title #{y}

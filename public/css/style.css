@@ -1,0 +1,33 @@
+.fl {
+    float: left;
+}
+.phone {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-flex: 1;
+            flex: 1;
+    flex: 1 1 auto;
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+}
+.phone_title {
+    width: 500px;
+}
+@media (max-width: 500px) {
+    .phone_title {
+        width: auto;
+    }
+}
+body.is_dark .phone_title {
+    color: white;
+}
+.phone img {
+    display: block;
+}
+.phone:first-child {
+    font-size: 89;
+}
